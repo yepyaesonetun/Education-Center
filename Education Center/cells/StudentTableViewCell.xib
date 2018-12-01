@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="StudentTableViewCell" customModule="Education_Center" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qg3-Cx-va8">
+                        <rect key="frame" x="0.0" y="0.0" width="333" height="87.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Du9-i5-3bv">
+                                <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4TT-Gf-Xf6"/>
+                                    <constraint firstAttribute="width" constant="80" id="8hO-Jq-U9U"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ye Pyae Sone Tun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSx-aP-sp0">
+                                <rect key="frame" x="96" y="22" width="145" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNs-IM-kFm">
+                                <rect key="frame" x="96" y="51.5" width="221" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pNs-IM-kFm" secondAttribute="trailing" constant="16" id="CoR-Xt-R3L"/>
+                            <constraint firstAttribute="bottom" secondItem="Du9-i5-3bv" secondAttribute="bottom" constant="8" id="GIb-zX-IOs"/>
+                            <constraint firstItem="Du9-i5-3bv" firstAttribute="top" secondItem="Qg3-Cx-va8" secondAttribute="top" constant="8" id="Jbp-8f-dGU"/>
+                            <constraint firstItem="pNs-IM-kFm" firstAttribute="top" secondItem="hSx-aP-sp0" secondAttribute="bottom" constant="8" id="M43-kw-OXx"/>
+                            <constraint firstItem="pNs-IM-kFm" firstAttribute="leading" secondItem="Du9-i5-3bv" secondAttribute="trailing" constant="8" id="OHD-Ap-RIO"/>
+                            <constraint firstItem="hSx-aP-sp0" firstAttribute="top" secondItem="Qg3-Cx-va8" secondAttribute="top" constant="22" id="WdC-o3-pHU"/>
+                            <constraint firstAttribute="bottom" secondItem="pNs-IM-kFm" secondAttribute="bottom" constant="24" id="l9v-bY-4Sc"/>
+                            <constraint firstItem="hSx-aP-sp0" firstAttribute="leading" secondItem="Du9-i5-3bv" secondAttribute="trailing" constant="8" id="plq-PO-KLa"/>
+                            <constraint firstItem="Du9-i5-3bv" firstAttribute="leading" secondItem="Qg3-Cx-va8" secondAttribute="leading" constant="8" id="pql-Hv-hol"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qg3-Cx-va8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0XG-3W-TIf"/>
+                    <constraint firstAttribute="trailing" secondItem="Qg3-Cx-va8" secondAttribute="trailing" id="JYK-pr-jCt"/>
+                    <constraint firstItem="Qg3-Cx-va8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bY9-BG-adO"/>
+                    <constraint firstAttribute="bottom" secondItem="Qg3-Cx-va8" secondAttribute="bottom" id="xPh-em-K2Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivStudent" destination="Du9-i5-3bv" id="TIv-W9-jKa"/>
+                <outlet property="lblGrade" destination="pNs-IM-kFm" id="TSV-k4-3qC"/>
+                <outlet property="lblStudentName" destination="hSx-aP-sp0" id="TaA-6B-om1"/>
+            </connections>
+            <point key="canvasLocation" x="148" y="165.51724137931035"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person_placeholder" width="96" height="96"/>
+    </resources>
+</document>
